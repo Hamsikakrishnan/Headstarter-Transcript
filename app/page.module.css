@@ -1,9 +1,19 @@
 .container {
   display: flex;
+  justify-content: center; /* Space between the content and image */
+  align-items: center; /* Center content and image vertically */
+  height: 100vh; /* Full viewport height */
+  padding: 2rem; 
+  background: black/* Padding around the container */
+}
+
+.container1{
+  display: flex;
   justify-content: space-between; /* Space between the content and image */
   align-items: center; /* Center content and image vertically */
   height: 100vh; /* Full viewport height */
-  padding: 2rem; /* Padding around the container */
+  padding: 2rem; 
+  background: black
 }
 
 .content {
@@ -50,6 +60,21 @@
 }
 
 .image {
-  max-width: 100%; /* Ensure image scales with container */
-  height: auto; /* Maintain aspect ratio */
+  /* max-width: 100%; 
+  height: auto;  */
+}
+
+.editor {
+  height: 500px;
+  width: 700px; /* Set height for the text editor */
+  margin-bottom: 1.5rem; 
+  color: white/* Space between editor and button */
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column; /* Stack title, description, and button vertically */
+  max-width: 50%; /* Ensure text content does not take up more than half the width */
+  margin-right: 2rem;
+  color: white /* Space between text content and image */
 }

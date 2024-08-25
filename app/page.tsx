@@ -49,14 +49,14 @@ const LeftMiddleButton = () => {
         <Image
           src="/images/2.png" // Replace with the path to your image
           alt="Description of Image"
-          width={400} // Adjust width as needed
-          height={300} // Adjust height as needed
+          width={500} // Adjust width as needed
+          height={400} // Adjust height as needed
           className={styles.image}
         />
       </div>
         {/* <h1 className={styles.title}>TRANSCRIPT<br />WIZARD</h1> */}
         <p className={styles.description}>
-          Effortlessly manage your sales transcripts.<br /> Add comments, attach files, and <br />use AI to create quick summaries, all in one place.
+          Effortlessly manage your transcripts.<br /> Add comments, attach files, and use AI to create <br/>quick summaries, all in one place.
         </p>
         {/* <Link href="/componets/mainpage"> */}
           <button onClick={handleClick} className={styles.button}>
