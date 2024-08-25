@@ -1,5 +1,7 @@
+'use client'
 // import React, { useEffect } from "react";
-
+// import Link from 'next/link';
+import { useRouter } from 'next/navigation'
 // export default function Home() {
 //   useEffect(() => {
 //     const element = document.getElementById("someElement");
@@ -35,6 +37,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 const LeftMiddleButton = () => {
+  const router = useRouter()
+  function handleClick() {
+    
+    router.push('/editor')
+  }
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -51,9 +58,11 @@ const LeftMiddleButton = () => {
         <p className={styles.description}>
           Effortlessly manage your sales transcripts.<br /> Add comments, attach files, and <br />use AI to create quick summaries, all in one place.
         </p>
-        <button className={styles.button}>
-          Get Started
-        </button>
+        {/* <Link href="/componets/mainpage"> */}
+          <button onClick={handleClick} className={styles.button}>
+            Get Started
+          </button>
+        {/* </Link> */}
         
       </div>
     </div>
